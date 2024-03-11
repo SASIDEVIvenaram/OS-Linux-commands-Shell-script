@@ -334,8 +334,9 @@ cat urllist.txt | tr -d ' ' | tr -s '.'
 ![alt text](image-46.png)
 
 # Backup commands
-tar -cvf backup.tar *
+tar -cvf backup.tar ex01
 ## OUTPUT
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/d1085875-c427-4fd1-a484-a7d04db54c35)
 
 
 mkdir backupdir
@@ -344,10 +345,12 @@ mv backup.tar backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/81f1ae6a-971b-480f-9a91-9a98844c6d7e)
 
 
 tar -xvf backup.tar
 ## OUTPUT
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/45bda56a-e6a0-45f1-9abe-d857b1a4cf88)
 
 gzip backup.tar
 
@@ -366,8 +369,10 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/348b7239-c9e5-4259-a2e3-80333cca7cb4)
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/bb7c3805-d960-4920-8f82-1d61ad7020f0)
 
- 
+
 cat << stop > herecheck.txt
 ```
 hello in this world
