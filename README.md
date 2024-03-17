@@ -534,7 +534,6 @@ else
 echo “Sorry, the object does not exist”
 fi
 ```
-
 ./ifnested.sh 
 ## OUTPUT
 ![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/35189e95-0861-4c28-91b0-a26889e135fc)
@@ -558,7 +557,6 @@ fi
 ^d
 ```
 
-
 cat iftest.sh 
 ```bash
 \#!/bin/bash
@@ -579,7 +577,7 @@ fi
 $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
-##OUTPUT
+## OUTPUT
 ![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/ee7466e0-74a5-40a2-aa4e-3bd619c9e86f)
 
 # check if a file
@@ -777,7 +775,7 @@ $ ./forin3.sh
 ## OUTPUT
 ![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/f688fffc-8620-42e0-b0e7-38d4ce2c0543)
 
-cat forin1.sh 
+cat > forin1.sh 
 ```bash
 #!/bin/bash
 # basic for command
@@ -787,20 +785,22 @@ echo The next state is $test
 done
 ```
 $ chmod 755 forin1.sh
-
+$ forin1.sh
 ## OUTPUT
-cat forinfile.sh 
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/53babe95-0f13-42d9-9e31-dc81b12f2dc2)
+
+cat > forinfile.sh 
 ```bash
 #!/bin/bash
 # reading values from a file
 file="cities"
 for state in `cat $file`
 do
-echo "Visit beautiful $file“
+echo "Visit beautiful $file"
 done
 ```
 $ chmod 777 forinfile.sh
-$ cat cities
+$ cat > cities
 Hyderabad
 Alampur
 Basara
@@ -808,11 +808,11 @@ Warangal
 Adilabad
 Bhadrachalam
 Khammam
-
+$ ./forinfile.sh
 ## OUTPUT
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/0cf084c0-0dec-4172-a70b-c1f1721673df)
 
-
-cat forctype.sh 
+cat > forctype.sh 
 ```bash
 #!/bin/bash
 # testing the C-style for loop
@@ -824,8 +824,9 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/4b43b32e-f435-4944-825d-25e0c7abb299)
 
-cat forctype1.sh 
+cat > forctype1.sh 
 ```bash
 #!/bin/bash
 # multiple variables
@@ -834,11 +835,12 @@ do
 echo "$a - $b"
 done
 ```
-$ chmod 755 forctype.sh
+$ chmod 755 forctype1.sh
 $ ./forctype1.sh 
 ## OUTPUT
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/c68a9a8b-f4a1-4886-a7c0-2204976fe237)
 
-cat fornested1.sh 
+cat > fornested1.sh 
 ```bash
 #!/bin/bash
 # nesting for loops
@@ -854,10 +856,11 @@ done
 $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
- ## OUTPUT
+## OUTPUT
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/4e3423f6-6836-4a0b-88f5-11e6faec879a)
 
  
-cat forbreak.sh 
+cat > forbreak.sh 
 ```bash
 #!/bin/bash
 # breaking out of a for loop
@@ -869,15 +872,17 @@ break
 fi
 echo "Iteration number: $var1"
 done
-echo "The for loop is completed“
+echo "The for loop is completed"
 ```
-## OUTPUT
+
 
 $ chmod 755 forbreak.sh
  
 $ ./forbreak.sh 
- 
-cat forbreak.sh 
+## OUTPUT
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/015dd29a-489f-4578-a55b-a1ffdcb2c4e2)
+
+cat > forcontinue.sh 
 ```bash
 #!/bin/bash
 # breaking out of a for loop
@@ -889,7 +894,7 @@ continue
 fi
 echo "Iteration number: $var1"
 done
-echo "The for loop is completed“
+echo "The for loop is completed"
 ```
 
  
@@ -897,8 +902,9 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
- 
-cat exread.sh 
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/37a3a88c-7f42-4f8b-8c01-cce95793b903)
+
+cat > exread.sh 
 ```bash
 #!/bin/bash
 # testing the read command
@@ -911,24 +917,22 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/7fd00c0b-38ed-424f-93ca-cc3e921301e4)
 
 
- cat exread1.sh
+cat exread1.sh
 ```bash
 #!/bin/bash
 # testing the read command
 read -p "Enter your name: " name
-echo "Hello $name, welcome to my program. “
+echo "Hello $name, welcome to my program. "
 ``` 
 $ chmod 755 exread1.sh 
-
-## OUTPUT
-
-
-
 $ ./exread1.sh 
- 
-cat funcex.sh
+## OUTPUT
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/6cf35f1f-00bc-4e40-9c2b-adff53df6671)
+
+cat > funcex.sh
 ```bash
 #!/bin/bash
 # trying to access script parameters inside a function
@@ -943,14 +947,13 @@ else
 echo "Usage: badtest1 a b"
 fi
 ```
+$ chmod 755 funcex.sh
+$ ./funcex.sh  
+$ ./funcex.sh 1 2
 ## OUTPUT
- ./funcex.sh 
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/742b48c6-ef27-4fd5-94ac-0334be11fc53)
 
- 
- ./funcex.sh 1 2
-
- 
-cat argshift.sh
+cat > argshift.sh
 ```bash
 #!/bin/bash 
  while (( "$#" )); do 
@@ -959,11 +962,11 @@ cat argshift.sh
 done
 ```
 $ chmod 777 argshift.sh
-
-## OUTPUT
 $ ./argshift.sh 1 2 3
- 
- cat argshift1.sh
+## OUTPUT
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/fbe6daee-0164-41ac-b42a-8bb286404932)
+
+cat > argshift1.sh
 ```bash
  #/bin/bash 
  # store arguments in a special array 
@@ -976,11 +979,12 @@ for (( i=0;i<$ELEMENTS;i++)); do
     echo ${args[${i}]} 
 done
 ```
-$ chmod 777 argshift.sh
+$ chmod 777 argshift1.sh
+$ ./argshift1.sh 1 2 3
 ## OUTPUT
-$ ./argshift.sh 1 2 3
- 
-cat argshift.sh
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/9cf392b6-1721-451b-af6f-09ef56121cdf)
+
+cat >argshift.sh
 ```bash
 #!/bin/bash 
 set -x 
@@ -990,9 +994,11 @@ while (( "$#" )); do
 done
 set +x
 ```
+
+$ ./argshift.sh 1 2 3
 ## OUTPUT
- ./argshift.sh 1 2 3
- 
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/b5c81291-b620-49b2-8b74-34cc3d0e36cf)
+
  
 cat > nc.awk
 ```bash
@@ -1023,7 +1029,8 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
- 
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/54c6f28c-a541-46d7-abc6-9a5c1908f992)
+
 cat > palindrome.sh
 ```bash
 #num=545
@@ -1050,6 +1057,7 @@ else
 fi
 ```
 ## OUTPUT 
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/fe0ed355-9a87-4833-b3ba-73798b2cadee)
 
 
 # RESULT:
