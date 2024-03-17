@@ -101,30 +101,35 @@ hello world
 grep Hello newfile 
 ## OUTPUT
 ![alt text](image-8.png)
+
 grep hello newfile 
 ## OUTPUT
 ![alt text](image-9.png)
 
 grep -v hello newfile 
+
 ## OUTPUT
 ![alt text](image-10.png)
 
 
 cat newfile | grep -i "hello"
+
 ## OUTPUT
 ![alt text](image-11.png)
 
 
 
 cat newfile | grep -i -c "hello"
+
 ## OUTPUT
 ![alt text](image-12.png)
 
 grep -R ubuntu /etc
+
 ## OUTPUT
 
-
 grep -w -n world newfile   
+
 ## OUTPUT
 ![alt text](image-13.png)
 
