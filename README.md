@@ -284,7 +284,7 @@ sed -n '2,4{s/$/*/;p}' file23
 ## OUTPUT
 ![alt text](image-41.png)
 
-#Sorting File content
+# Sorting File content
 cat > file21
 ```
 1001 | Ram | 10000 | HR
