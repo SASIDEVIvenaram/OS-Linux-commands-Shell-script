@@ -383,9 +383,10 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
-
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/50e5ea98-8832-4cb8-91f1-3a1a7e9d4abe)
 
 cat < scriptest.sh 
+
 ```bash
 \#!/bin/sh
 echo “File name is $0 ”
@@ -398,49 +399,35 @@ echo 'The $@ is ' $@
 echo 'The $\# is ' $1#
 echo 'The $$ is ' $$
 ps
-^d
  ```
-
-cat scriptest.sh 
-```bash
-\#!/bin/sh
-echo “File name is $0 ”
-echo "File name is " `basename $0`
-echo “First arg. is ” $1
-echo “Second arg. is ” $2
-echo “Third arg. is ” $3
-echo “Fourth arg. is ” $4
-echo 'The $@ is ' $@
-echo 'The $\# is ' $\#
-echo 'The $$ is ' $$
-ps
-```
- 
 chmod 777 scriptest.sh
  
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/c04772d5-249d-48d6-8fe3-d649cd4f3ddf)
 
  
 ls file1
 ## OUTPUT
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/8d5dc2e3-d6fb-4808-abc4-a8cd1857ad9e)
 
 echo $?
 ## OUTPUT 
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/f67ae7c5-16fd-4fb6-9622-ea036b3f6a92)
+
 ./one
 bash: ./one: Permission denied
- 
+
 echo $?
 ## OUTPUT 
- 
-abcd
- 
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/e5dd5dd9-69c7-4807-8ceb-5ac6c7e7d0a3)
+
+echo abcd
 echo $?
- ## OUTPUT
+## OUTPUT
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/7977fb0a-df67-4368-bd7b-00ca839d19e6)
 
-
- 
 # mis-using string comparisons
 
 cat < strcomp.sh 
@@ -469,15 +456,14 @@ else
 echo "$val1 is less than $val2"
 fi
 ```
-##OUTPUT
-
-
+## OUTPUT
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/3b9d18c5-2a72-4266-aebd-6657258470fc)
 
 chmod 755 strcomp.sh
- 
 ./strcomp.sh 
-## OUTPUT
 
+## OUTPUT
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/894b79df-c738-462a-ad2c-c151a06f6974)
 
 # check file ownership
 cat < psswdperm.sh 
@@ -504,6 +490,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/690db9b2-2a13-4f55-9618-63d70d89953b)
 
 # check if with file location
 cat>ifnested.sh 
@@ -550,8 +537,7 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
-
-
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/35189e95-0861-4c28-91b0-a26889e135fc)
 
 # using numeric test comparisons
 cat > iftest.sh 
@@ -594,6 +580,7 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/ee7466e0-74a5-40a2-aa4e-3bd619c9e86f)
 
 # check if a file
 cat > ifnested.sh 
@@ -642,7 +629,8 @@ fi
 $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
-##OUTPUT
+## OUTPUT
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/1448257c-5e29-47fd-a65d-640dae7671fa)
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -671,7 +659,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
-
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/421253d5-6574-485c-adcb-1142ebd82689)
 
 # testing compound comparisons
 cat> ifcompound.sh 
@@ -687,8 +675,9 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/5e88fdd6-2b73-465f-9a2a-04b0e0845cb7)
 
-# using the case command
+# using the case command/
 cat >casecheck.sh 
 ```bash
 case $USER in
@@ -706,8 +695,10 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
- 
-cat > whiletest
+## OUTPUT
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/8ef82243-4b34-447c-b6d1-abb33adac470)
+
+cat > whiletest.sh
 ```bash
 #!/bin/bash
 #while command test
@@ -721,11 +712,12 @@ done
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
- 
- 
-cat untiltest.sh 
+## OUTPUT
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/76e69964-338e-4109-9448-977242d3c0eb)
+
+cat > untiltest.sh 
 ```bash
-\#using the until command
+#using the until command
 var1=100
 until [ $var1 -eq 0 ]
 do
@@ -734,13 +726,15 @@ var1=$[ $var1 - 25 ]
 done
 ``` 
 $ chmod 755 untiltest.sh
- 
- 
- 
-cat forin1.sh 
+$ ./untiltest.sh
+
+## OUTPUT:
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/533b700f-2114-4b23-935b-713e4e172ddb)
+
+cat > forin1.sh 
 ```bash
-\#!/bin/bash
-\#basic for command
+#!/bin/bash
+#basic for command
 for test in Alabama Alaska Arizona Arkansas California Colorado
 do
 echo The next state is $test
@@ -748,12 +742,16 @@ done
  ```
  
 $ chmod 755 forin1.sh
- 
- 
-cat forin2.sh 
+$ ./forin1.sh
+
+## OUTPUT:
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/04c88577-87cf-4f4f-bae9-90f092077156)
+
+
+cat > forin2.sh 
 ```bash
-\#!/bin/bash
-\# another example of how not to use the for command
+#!/bin/bash
+# another example of how not to use the for command
 for test in I don't know if this'll work
 do
 echo “word:$test”
@@ -761,31 +759,24 @@ done
  ```
  
 $ chmod 755 forin2.sh
- 
-cat forin2.sh 
+$ ./forin2.sh
+## OUTPUT
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/40550f25-5f51-4b68-8d09-7d865fc91704)
+
+cat > forin3.sh 
 ```bash
-\#!/bin/bash
-\# another example of how not to use the for command
-for test in I don't know if this'll work
-do
-echo “word:$test”
-done
-```
-$ chmod 755 forin2.sh
- 
-$ ./forin2.sh 
- 
-cat forin3.sh 
-```bash
-\#!/bin/bash
-\# another example of how not to use the for command
+#!/bin/bash
+# another example of how not to use the for command
 for test in I don\'t know if "this'll" work
 do
 echo "word:$test"
 done
 ```
+$ chmod 755 forin3.sh
 $ ./forin3.sh 
- 
+## OUTPUT
+![image](https://github.com/SASIDEVIvenaram/OS-Linux-commands-Shell-script/assets/118707332/f688fffc-8620-42e0-b0e7-38d4ce2c0543)
+
 cat forin1.sh 
 ```bash
 #!/bin/bash
